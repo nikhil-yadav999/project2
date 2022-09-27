@@ -29,13 +29,13 @@ g[0].addEventListener('click',function(){
     console.log("voila");
     //document.getElementsByClassName("gi");
     g[0].style.background="red";
-    document.getElementById("rightbar").innerText="Wohoo!!!";
+    //document.getElementById("rightbar").innerText="Wohoo!!!";
 });
 g[1].addEventListener('click',function(){
     console.log("voila");
     //document.getElementsByClassName("gi");
     g[0].style.background="green";
-    document.getElementById("rightbar").innerText=prev;
+    //document.getElementById("rightbar").innerText=prev;
 });
 
 //arrow notation
