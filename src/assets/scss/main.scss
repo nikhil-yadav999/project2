@@ -1,0 +1,49 @@
+// table--------------
+//variables
+//components
+//base
+//layout
+//pages
+//components
+//----------------------------------
+
+@import './abstracts/variables';
+@import "~bootstrap/scss/bootstrap";
+//@import './abstracts/variables';
+@import './abstracts/css-variables';
+@import './components/buttons';
+@import './base/body';
+@import './layout/layout';
+@import './pages/iframes';
+@import './components/components';
+@import './base/media';
+
+
+
+
+
+
+
+
+
+
+//this idon't know much about
+
+// Create your own map
+/*$custom-colors: (
+  "custom-color": red
+);
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+*/
+
+//@import "~bootstrap/scss/bootstrap";
+
+
+
+

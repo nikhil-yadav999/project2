@@ -1,0 +1,103 @@
+@media screen and (max-width:850px){
+    nav,article,aside,section,#maingrid{
+        display:block;
+        clear:both;
+        grid: none;
+        width:100%;
+        height:auto;
+        /*background-color: aqua;*/
+    }
+    /*#i1{
+        clear:both;
+        width:100%;
+        float:none;
+        display:block;
+        height:500px;
+    }
+    section{
+        width:100%;
+        float:none;
+    }*/
+    .top {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .top label{
+        font-size: 20px;
+        padding:3px;
+        //width:100px;
+        width:auto;
+        margin:3px;
+    }
+    /*body{
+        display:flex;
+        flex-wrap: wrap;
+    }*/
+    footer{
+        height:80px;
+        font-size:25px;
+        padding:5px;
+    }
+    /*section{
+        display:flex;
+        flex-direction: column;
+    }*/
+    /*#i2{
+        width
+    }*/
+    #a2{
+        width:90%;
+        font-size:20px;
+        height:auto;
+    }
+    #a2 header{
+        font-size: 30px;
+        height:auto;
+    }
+    #rightbar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    #rightbar img{
+        width:30%;
+        height:auto;
+    }
+    .g1{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .myslides img{
+        width: 340px;
+        height:230px;
+    }
+    .ss1,.ss2{
+        display:none;
+    }
+    #a2{
+        width:90%;
+        height:300px;
+        margin:auto;
+    }
+    #a2 header{
+        height:20px;
+    }
+    .g1{
+        //display:grid;
+        //display:block;
+        //grid-template-columns: auto;
+        //row-gap: 5px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .gi{
+        width:100%;
+        display:block;
+    }
+    /*#i2{
+        clear:both;
+        width:100%;
+    }*/
+}

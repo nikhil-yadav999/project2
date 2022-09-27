@@ -1,0 +1,11 @@
+@import '../base/media';
+
+#maingrid{
+    display:grid;
+    column-gap: 2px;
+}
+section{
+    grid-area: 4 / 2 / 8 / 6;
+    display:grid;
+    margin-left: 0px;
+}

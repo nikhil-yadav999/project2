@@ -1,0 +1,19 @@
+/*@use './assets/variables' as * */
+@import '../abstracts/variables';
+@each $bright in $g1btnbright {
+.g1button-#{$bright}{
+//.gi button{
+    height:80px;
+    width:auto;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color:$g1btn-color;
+    box-shadow: 1px 1.5px;
+    filter:brightness($bright);
+//}
+.g1button-#{$bright}:hover{
+    background-color: green;
+}
+}
+}

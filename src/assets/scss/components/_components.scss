@@ -1,0 +1,190 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../base/media';
+
+.top{
+    grid-area: 1 / 1 / 2 / 7;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    //box-sizing: content-box;
+    background-color: rgb(50, 50, 50);
+}
+.top a{
+    text-decoration:none;
+    color:rgb(0, 255, 0);
+}
+.snv{
+    grid-area:2 / 1 / 5 / 2;
+    background-color: rgb(83, 82, 82);
+    @include paddstuff;
+}
+.ss1{
+    grid-area: 3/1/4/3;
+}
+.ss2{
+    grid-area: 3/5/4/7;
+    display:flex;
+    justify-content: center;
+}
+.myslideshow{
+    grid-area: 3 /3 /4/5;
+    display: flex;
+    justify-content: center;
+}
+.myslideshow .fade{
+    opacity: 1;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.myslides img{
+    height:400px;
+    width:700px;
+    margin:auto;
+}
+.navbar /*navbar-expand-lg bg-light*/{
+    grid-area:2 / 1 / 3 / 7;
+    padding:10px;
+    .nav-item{
+        margin:0 1.5rem;
+    }
+    //width:100%;
+}
+/*.hh,*/header{
+    /*width:100%;*/
+    grid-area: 1 / 1 / 2 / 7 ;
+    //padding:30px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: darkgrey;
+    color:white;
+    text-align: center;
+    justify-content: center;
+
+}
+.top label{
+    width:13%;
+    padding:15px;
+    /*background-color: rgb(110, 105, 105);*/
+    display:flex;
+    flex-wrap: wrap;
+    color:rgb(0, 255, 0);
+    font-size:25px;
+    border-radius: 15px;
+    margin:0px;
+    text-align:center;
+}
+.top label:hover{
+    background-color:green;
+    color:white;
+}
+summary{
+    color:green;
+    font-size:30px;
+    font-weight: bold;
+}
+
+
+label[id="c"]{
+    text-align:center;
+    padding:20px;
+    width:100%;
+    background-color: rgb(84, 82, 82);
+}
+article{
+    grid-area: 2 / 2 / 5 / 6;
+    color:white;
+    font-size:20px;
+    padding:20px;
+}
+aside{
+    grid-area: 2 / 6 / 5 / 6;
+    color:darkgreen;
+    @include paddstuff;
+    background-color: rgb(151, 148, 148);
+}
+#rightbar{
+    grid-area: 4 / 6 / 14 / 7;
+    margin:0px;
+    border: 2px inset white;
+    font-size: 30px;
+    color:green;
+    font-weight: bold;
+    text-align: center;
+    font-family:cursive;
+}
+@each $bor,$value in $rightbar-img{
+.img-#{$bor}{
+    width:100%;
+    height:auto;
+    margin:5px;
+    border-radius: $value;
+}
+}
+footer{
+    @extend header;
+    grid-area: 5 / 1 / 6 / 7;
+    height:60px;
+    font-size: 30px;
+    padding:5px;
+    /*color:white;
+    font-size: 30px;
+    background-color: rgb(129, 124, 124);
+    text-align: center;*/
+}
+.snv a{
+    color:rgb(75, 198, 75);
+    @include paddstuff;
+    padding:5px;
+    border-radius: 5px;
+}
+.snv a:hover{
+    color:blue;
+    background-color: black;
+}
+#a2{
+    grid-area: 8 / 5 / 10 / 6;
+    text-align: center;
+    background-color: rgb(75, 66, 66);
+    color:rgb(37, 224, 37);
+    font-style: italic;
+    font-family: cursive;
+    @include paddstuff;
+    border:none;
+    font-size:20px;
+    display:flex;
+    flex-wrap: wrap;
+    margin:50px;
+    height:300px;
+    justify-content: center;
+}
+#a2 header{
+    font-size: 30px;
+    height:33px;
+}
+.g1{
+    grid-area: 12 / 1 / 14 / 6;
+    display: grid;
+    background-color: $g1background-color/*black*/;
+    grid-template-columns:auto auto auto auto;
+    gap: 50px 30px;
+    padding:20px;
+    justify-content: center;
+}
+.gi{
+    background-color: rgb(180, 176, 176);
+    text-align: center;
+    @include paddstuff;
+    font-size: 20px;
+    margin: auto;
+}
+.gi header{
+    grid-area:10 / 1 / 11 / 6 ;
+    background-color: rgb(116, 107, 107);
+}
+
+.gi img{
+    width:90%;
+    height:40%;
+    margin:auto;
+}

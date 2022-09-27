@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color:rgb(12, 148, 12);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding:10px;
+}
+lh{
+    font-size: 35px;
+    color:rgb(53, 206, 53);
+}

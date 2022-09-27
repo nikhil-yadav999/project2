@@ -1,0 +1,38 @@
+#w {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+#w img {
+  width: 30%;
+  height: auto;
+  margin: 5px;
+}
+
+@media screen and (max-width: 830px) {
+  #w {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  #w img {
+    width: 48%;
+    height: auto;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #w {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  #w img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=wallpaperlayout.34214e0b.css.map */
