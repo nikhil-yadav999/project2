@@ -23,20 +23,36 @@ rightbar.addEventListener('mouseout',function(){
 })*/
 let g=document.getElementsByClassName("gi");
 
-let prev=document.getElementById("rightbar").innerText;
+//let prev=document.getElementById("rightbar").innerText;
 //didn't work with only g.addev......
-g[0].addEventListener('click',function(){
+/*g[0].addEventListener('click',function(){
     console.log("voila");
-    //document.getElementsByClassName("gi");
+    //document.getElementsByClassName("gi");//pre
     g[0].style.background="red";
     //document.getElementById("rightbar").innerText="Wohoo!!!";
 });
 g[1].addEventListener('click',function(){
     console.log("voila");
-    //document.getElementsByClassName("gi");
+    //document.getElementsByClassName("gi");//pre
     g[0].style.background="green";
     //document.getElementById("rightbar").innerText=prev;
-});
+});*/
+let prevcolor=[];
+for(let l=0;l<4;l++)
+{
+    prevcolor[l]=g[l].style.background;
+}
+for(let h=0;h<4;h++)
+{
+    g[h].addEventListener('click',function(){
+        for(let z=0;z<4;z++)
+        {
+            g[z].style.background=prevcolor[z];
+        }
+        g[h].style.background="green";
+        
+    })
+}
 
 //arrow notation
 summ=(a,b)=>{
@@ -74,7 +90,7 @@ parsed=JSON.parse(`{"name":"nikhil","length":1,"a":{"this":"that"}}`);
 console.log(parsed);*/ 
 let db=document.getElementsByTagName("button");
 
-for(let k=1;k<15;k++)
+for(let k=1;k<6;k++)
 {
 db[k].addEventListener('click',function(){
     alert("These buttons are not usable as of now");
